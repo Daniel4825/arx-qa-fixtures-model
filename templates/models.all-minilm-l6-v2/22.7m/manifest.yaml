@@ -1,0 +1,61 @@
+version: "1.0"
+
+metadata:
+  id: models.all-minilm-l6-v2@22.7m
+  name: all-MiniLM-L6-v2 (QA)
+  version: 1.0.0
+  releaseDate: "2022-09-15"
+  type: models
+  categories:
+    - embedding-model
+  subtitle: Sentence transformer model that maps text to 384-dimensional dense vectors for semantic similarity and search tasks.
+  description: >
+    The all-MiniLM-L6-v2 is a sentence-transformers model fine-tuned on over 1 billion sentence pairs.
+    It maps sentences and paragraphs to a 384-dimensional dense vector space and can be used for tasks
+    like clustering, semantic search, and information retrieval. The model achieves strong performance
+    with only 22.7M parameters, making it efficient for deployment. Input is truncated to 256 word pieces maximum.
+  supportedLanguages:
+    - en-US
+
+  model:
+    collection: all-minilm-l6-v2
+    params: 22.7m
+    variant: embedding
+    precision: fp32
+    quantization: null
+    format: safetensors
+    tasks:
+      - text-embedding
+    inputTypes:
+      - text
+    outputTypes:
+      - vector
+    sources:
+      - provider: huggingface
+        modelId: sentence-transformers/all-MiniLM-L6-v2
+
+  developer:
+    name: Sentence Transformers
+    url: https://www.sbert.net
+
+  tags:
+    - embedding
+    - text-embedding
+    - semantic-search
+    - sentence-transformers
+
+resources:
+  cpu: "2"
+  memory: "4Gi"
+  storage: "1Gi"
+  gpu: 1
+  vram: "3Gi"
+
+deployment:
+  type: model
+  engines:
+    - name: vllm
+      version: ">=0.11.0"
+      apiEndpoints:
+        - /v1/embeddings
+      contextWindow: 256
