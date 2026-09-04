@@ -1,0 +1,50 @@
+zh-TW:
+  subtitle: Qwen3.6-35B-A3B MoE 多模態模型，Qwen 官方 FP8 safetensors 權重，搭配 vLLM 推論。
+  description: |
+    阿里巴巴官方發布的 Qwen3.6-35B-A3B FP8 版本：e4m3 區塊量化，35B 參數中每個 token 約啟動 3B，
+    由 vLLM 服務，視覺編碼器就在同一個 repository 內。
+zh-CN:
+  subtitle: Qwen3.6-35B-A3B MoE 多模态模型，Qwen 官方 FP8 safetensors 权重，搭配 vLLM 推理。
+  description: |
+    阿里巴巴官方发布的 Qwen3.6-35B-A3B FP8 版本：e4m3 分块量化，35B 参数中每个 token 约激活 3B，
+    由 vLLM 服务，视觉编码器就在同一个 repository 内。
+ja-JP:
+  subtitle: Qwen3.6-35B-A3B MoE マルチモーダルモデル、Qwen 公式 FP8 safetensors 重み、vLLM 推論向け。
+  description: |
+    アリババ公式の Qwen3.6-35B-A3B FP8 版。e4m3 ブロック quantization で、35B のうち token ごとに約 3B が
+    有効化され、vLLM で提供されます。ビジョンエンコーダは同じ repository に含まれます。
+ko-KR:
+  subtitle: Qwen3.6-35B-A3B MoE 멀티모달 모델, Qwen 공식 FP8 safetensors 가중치, vLLM 추론용.
+  description: |
+    알리바바 공식 Qwen3.6-35B-A3B FP8 버전. e4m3 블록 quantization으로 35B 중 token당 약 3B가 활성화되며,
+    vLLM이 제공합니다. 비전 인코더는 같은 repository 안에 있습니다.
+de-DE:
+  subtitle: Qwen3.6-35B-A3B multimodales MoE-Modell, offizielle FP8-safetensors-Gewichte von Qwen für vLLM.
+  description: |
+    Alibabas eigene FP8-Veröffentlichung von Qwen3.6-35B-A3B: e4m3-Blockquantisierung, ~3B von 35B
+    Parametern pro token aktiviert, von vLLM bereitgestellt, mit dem Vision-Encoder im selben repository.
+fr-FR:
+  subtitle: Modèle multimodal MoE Qwen3.6-35B-A3B, poids FP8 safetensors officiels de Qwen pour vLLM.
+  description: |
+    Version FP8 publiée par Alibaba elle-même de Qwen3.6-35B-A3B : quantization e4m3 par blocs, ~3B des
+    35B paramètres activés par token, servie par vLLM, l'encodeur visuel étant dans le même repository.
+it-IT:
+  subtitle: Modello multimodale MoE Qwen3.6-35B-A3B, pesi FP8 safetensors ufficiali di Qwen per vLLM.
+  description: |
+    Versione FP8 rilasciata direttamente da Alibaba di Qwen3.6-35B-A3B: quantizzazione e4m3 a blocchi,
+    ~3B dei 35B parametri attivati per token, servita da vLLM, con l'encoder visivo nello stesso repository.
+nl-NL:
+  subtitle: Qwen3.6-35B-A3B MoE multimodaal model, officiële FP8-safetensors-gewichten van Qwen voor vLLM.
+  description: |
+    Alibaba's eigen FP8-uitgave van Qwen3.6-35B-A3B: e4m3-blokkwantisatie, ~3B van de 35B parameters
+    actief per token, bediend door vLLM, met de vision-encoder in hetzelfde repository.
+pt-PT:
+  subtitle: Modelo multimodal MoE Qwen3.6-35B-A3B, pesos FP8 safetensors oficiais da Qwen para vLLM.
+  description: |
+    Versão FP8 lançada pela própria Alibaba do Qwen3.6-35B-A3B: quantização e4m3 por blocos, ~3B dos 35B
+    parâmetros ativados por token, servida pelo vLLM, com o codificador de visão no mesmo repository.
+es-ES:
+  subtitle: Modelo multimodal MoE Qwen3.6-35B-A3B, pesos FP8 safetensors oficiales de Qwen para vLLM.
+  description: |
+    Versión FP8 publicada por la propia Alibaba de Qwen3.6-35B-A3B: cuantización e4m3 por bloques, ~3B de
+    los 35B parámetros activados por token, servida por vLLM, con el codificador de visión en el mismo repository.

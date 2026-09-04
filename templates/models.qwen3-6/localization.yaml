@@ -1,0 +1,30 @@
+zh-TW:
+  subtitle: 阿里巴巴 Qwen3.6 多模態 MoE 模型系列
+  description: 阿里巴巴的 Qwen3.6 多模態 MoE 模型系列，35B 參數中每個 token 約啟動 3B，支援文字、影像與視訊輸入
+zh-CN:
+  subtitle: 阿里巴巴 Qwen3.6 多模态 MoE 模型系列
+  description: 阿里巴巴的 Qwen3.6 多模态 MoE 模型系列，35B 参数中每个 token 约激活 3B，支持文本、图像与视频输入
+ja-JP:
+  subtitle: Alibaba Qwen3.6 マルチモーダル MoE モデルファミリー
+  description: Alibaba の Qwen3.6 マルチモーダル MoE モデルファミリー。35B のうち token ごとに約 3B が有効化され、テキスト・画像・動画の入力に対応します
+ko-KR:
+  subtitle: Alibaba Qwen3.6 멀티모달 MoE 모델 제품군
+  description: Alibaba의 Qwen3.6 멀티모달 MoE 모델 제품군. 35B 중 token당 약 3B가 활성화되며 텍스트, 이미지, 비디오 입력을 지원합니다
+de-DE:
+  subtitle: Multimodale MoE-Modellfamilie Qwen3.6 von Alibaba
+  description: Alibabas multimodale MoE-Modellfamilie Qwen3.6 — etwa 3B von 35B Parametern pro token aktiviert, mit Text-, Bild- und Videoeingabe
+fr-FR:
+  subtitle: Famille de modèles MoE multimodaux Qwen3.6 d'Alibaba
+  description: "La famille de modèles MoE multimodaux Qwen3.6 d'Alibaba : environ 3B des 35B paramètres activés par token, avec entrées texte, image et vidéo"
+it-IT:
+  subtitle: Famiglia di modelli MoE multimodali Qwen3.6 di Alibaba
+  description: "La famiglia di modelli MoE multimodali Qwen3.6 di Alibaba: circa 3B dei 35B parametri attivati per token, con input di testo, immagini e video"
+nl-NL:
+  subtitle: Multimodale MoE-modelfamilie Qwen3.6 van Alibaba
+  description: "Alibaba's multimodale MoE-modelfamilie Qwen3.6: ongeveer 3B van de 35B parameters actief per token, met invoer van tekst, beeld en video"
+pt-PT:
+  subtitle: Família de modelos MoE multimodais Qwen3.6 da Alibaba
+  description: "A família de modelos MoE multimodais Qwen3.6 da Alibaba: cerca de 3B dos 35B parâmetros ativados por token, com entrada de texto, imagem e vídeo"
+es-ES:
+  subtitle: Familia de modelos MoE multimodales Qwen3.6 de Alibaba
+  description: "La familia de modelos MoE multimodales Qwen3.6 de Alibaba: unos 3B de los 35B parámetros activados por token, con entrada de texto, imagen y vídeo"

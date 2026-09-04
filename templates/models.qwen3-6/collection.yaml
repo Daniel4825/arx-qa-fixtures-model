@@ -1,0 +1,36 @@
+version: "1"
+metadata:
+  id: models.qwen3-6
+  name: Qwen3.6 (QA)
+  updateDate: 2026-08-25
+  description: README.md
+
+  categories:
+    - llm
+    - image-model
+    - multimodal
+  tags:
+    - open-source
+    - qwen
+    - qwen3.6
+    - qwen3-6
+    - vision
+    - vlm
+    - multimodal
+    - moe
+  tasks:
+    - text-generation
+    - image-to-text
+    - video-to-text
+    - thinking
+  inputTypes:
+    - text
+    - image
+    - video
+  outputTypes:
+    - text
+
+  developer:
+    name: Alibaba Qwen Team
+    url: https://www.aliyun.com
+  license: apache-2.0

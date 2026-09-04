@@ -1,0 +1,81 @@
+version: "1.0"
+
+metadata:
+  id: models.qwen3-6@35b-a3b-fp8
+  name: Qwen3.6-35B-A3B FP8 (QA)
+  version: 1.0.0
+  releaseDate: "2026-04-15"
+  type: models
+  categories:
+    - multimodal
+    - llm
+  subtitle: Qwen3.6-35B-A3B MoE multimodal model, Qwen's official FP8 safetensors weights for vLLM.
+  description: |
+    Alibaba's own FP8 release of Qwen3.6-35B-A3B: e4m3 block quantization, ~3B of 35B parameters
+    activated per token, served by vLLM with the vision encoder in the same repository.
+
+  supportedLanguages:
+    - en-US
+    - zh-TW
+
+  model:
+    collection: qwen3-6
+    params: "35b"
+    variant: instruct
+    # fp8 describes this checkpoint's own weights, not the bf16 upstream it was made from.
+    precision: fp8
+    quantization: null
+    format: safetensors
+    tasks:
+      - text-generation
+      - image-to-text
+      - video-to-text
+      - thinking
+    inputTypes:
+      - text
+      - image
+      - video
+    outputTypes:
+      - text
+    sources:
+      - provider: huggingface
+        modelId: Qwen/Qwen3.6-35B-A3B-FP8
+
+  developer:
+    name: Alibaba Qwen Team
+    url: https://qwenlm.github.io
+
+  tags:
+    - vlm
+    - qwen
+    - qwen3.6
+    - moe
+    - multimodal
+    - vision
+    - 35b
+    - a3b
+    - fp8
+    - safetensors
+    - image-to-text
+    - thinking
+
+resources:
+  cpu: "4"
+  memory: "16Gi"
+  storage: "40Gi"
+  gpu: 1
+  vram: "48Gi"
+
+deployment:
+  type: model
+  engines:
+    # nvidia-vllm rather than vllm, for the reason paddleocr-vl-1-6@0.9b picked it: the two are
+    # separate engines on different images (nvcr.io/nvidia/vllm vs vllm/vllm-openai) with no
+    # alias, and the NVIDIA one is the image this platform runs on its own GPUs — which is also
+    # where FP8 e4m3 is a native weight format. >=0.19.0 is what Qwen's model card requires for
+    # the qwen3_5_moe architecture.
+    - name: nvidia-vllm
+      version: ">=0.19.0"
+      apiEndpoints:
+        - /v1/chat/completions
+      contextWindow: 131072

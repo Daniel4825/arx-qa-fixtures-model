@@ -1,0 +1,10 @@
+version: "1.0"
+metadata:
+  type: personal
+  updateDate: 2026-09-04
+
+  name: Daniel Huang
+  description: QA fixture templates for ARX validation
+
+  email: danielhuang@ardge.com
+  url: https://github.com/Daniel4825
